@@ -1,0 +1,24 @@
+{% extends 'addr/base.html' %}
+
+
+{% block content %}
+<div class="friend">
+
+    {% if friend.approved_friend %}
+    <b> 공개된 주소록입니다</b><br>
+    {% endif %}
+</div>
+
+<div>
+    <br>
+    <ul>
+        <li> 이 름 : {{ friend.name }}</li>
+        <li> 연락처1 : {{ friend.phon_number_1 }}</li>
+        <li> 연락처2 : {{ friend.phon_number_2 }}</li>
+        <li> e - mail: {{ friend.e_mail }}</li>
+    </ul>
+
+</div>
+
+
+{% endblock %}
