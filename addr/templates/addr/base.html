@@ -12,6 +12,9 @@
 <body>
 
 <div class="page-header">
+    {% if user.is_authenticated %}
+    <a href="{% url 'addr:friend_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    {% endif %}
     <h1><a href="{% url 'addr:friend_list' %}">Django Girls Address</a></h1>
 </div>
 
