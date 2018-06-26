@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Address</title>
+</head>
+<body>
+
+<div>
+            <h1><a href="">Django Girls Address</a></h1>
+        </div>
+
+        <div>
+{% for friend in friends %}
+
+
+<ul>
+    <a href=""><li> 이름: {{ friend.name }}   연락처1: {{ friend.phon_number_1 }}   </li>
+</a>
+
+
+</ul>
+
+</div>
+
+{% endfor %}
+</body>
+</html>
